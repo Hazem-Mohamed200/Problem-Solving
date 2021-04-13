@@ -35,15 +35,16 @@ int main()
     int t; cin >> t;
     while(t--)
     {
-        int n,l,r,s,nums,ctr,sum,sumh;
+        int n,l,r,s;
         cin >> n >> l >> r >> s;
-        nums = r-l+1;
-        ctr = 0;
-        sum = 0;
-        vec(int)hld;
+        int nums = r-l+1;
+        vec(int)v,hld;
         multiset<int>ms,perm;
+        int ctr = 0;
+        int sum = 0;
         for(int i = n; i >= 1; i--)
         {
+            v.pb(i);
             perm.insert(i);
             if(ctr < nums)
             {
@@ -54,10 +55,13 @@ int main()
             ctr++;
         }
         if(sum < s)
-            cout << "-1\n";
+        {
+            cout << -1 << el;
+            continue;
+        }
         else
         {
-            sumh = sum;
+            int sumh = sum;
             int limit = 1;
             bool done = false;
             for(int i = 0; i < nums; i++)
@@ -102,9 +106,13 @@ int main()
                     break;
             }
             if(!done)
-                cout << "-1\n";
+            {
+                cout << -1 << el;
+                continue;
+            }
             else
             {
+                int j = 0;
                 for(auto i:ms)
                     perm.erase(i);
                 for(int i = 1; i <= n; i++)
