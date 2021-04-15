@@ -41,8 +41,19 @@ bool valid(int r,int c)
         return false;
     return true;
 }
-void solve(int index = 0,int i = si,int j = sj)
+void solve(int i = si,int j = sj)
 {
+    for(int index = 0; index < s.length(); index++)
+    {
+        if(s[index]-'0' == directions[0])
+            i++;
+        else if(s[index]-'0' == directions[1])
+            i--;
+        else if(s[index]-'0' == directions[2])
+           j++;
+        else if(s[index]-'0' == directions[3])
+            j--;
+
         if(!valid(i,j) || maze[i][j] == '#')
             return;
         if(maze[i][j] == 'E')
@@ -50,16 +61,8 @@ void solve(int index = 0,int i = si,int j = sj)
             ctr++;
             return;
         }
-        if(index == s.length())
-            return;
-    if(s[index]-'0' == directions[0])
-        solve(index+1,++i,j);
-    else if(s[index]-'0' == directions[1])
-        solve(index+1,--i,j);
-    else if(s[index]-'0' == directions[2])
-        solve(index+1,i,--j);
-    else if(s[index]-'0' == directions[3])
-        solve(index+1,i,++j);
+    }
+    return;
 }
 int main()
 {
@@ -79,7 +82,7 @@ int main()
     }
     cin >> s;
     do{
-        solve();
+     solve();
     } while(next_permutation(directions,directions+4));
     cout << ctr;
 }
