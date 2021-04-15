@@ -14,7 +14,9 @@
 #define mms(v,i) memset(v, i, sizeof v)
 #define all(a) a.begin(), a.end()
 #define allr(a) a.rbegin(), a.rend()
-const ll MAX = 100000; const ll mod = 1000000007;
+int dx[]= {0, 1, 0, -1};
+int dy[]= {1, 0, -1, 0};
+const ll MAX = 4; const ll mod = 1000000007;
 using namespace std;
 
 void file()
@@ -28,67 +30,42 @@ void zuka()
     cin.tie(0);
     cout.tie(0);
 }
+ll n;
+ll count(string s,char x)
+{
+    int ctr = 0;
+    for(auto i:s)
+        if(i == x)
+            ctr++;
+    return ctr;
+}
 ll klaby(string s)
 {
+    ll num = 0;
     ll p = 1;
-    ll x = 0;
     for(int i = s.length()-1; i >= 0; i--)
     {
-        x += (s[i]-'0')*p;
-        p*=10;
+       int nn = s[i]-'0';
+       num += nn*p;
+       p*=10;
     }
-    return x;
+    return num;
+}
+set<ll>v;
+void fun(ll lucky)
+{
+    if(lucky > 1e10)
+        return;
+    else if(count(to_string(lucky),'4') == count(to_string(lucky),'7'))
+         v.insert(lucky);
+
+    fun(lucky * 10 + 4);
+    fun(lucky * 10 + 7);
 }
 int main()
 {
     zuka();
-    ll n; cin >> n;
-    bool done = true;
-    int SZ = 0;
-    if(to_string(n).length()&1)
-    {
-        int sz = to_string(n).length()+1;
-        sz/=2;
-        for(int i = 0; i < sz; i++)
-            cout << '4';
-        for(int i = 0; i < sz; i++)
-            cout << '7';
-    }
-    else
-    {
-        int sz = to_string(n).length();
-        sz/=2;
-        string hld = "";
-        for(int i = 0; i < sz; i++)
-            hld += '7';
-        for(int i = 0; i < sz; i++)
-            hld += '4';
-        if(n > klaby(hld))
-            SZ = to_string(n).length()+2;
-        else
-            SZ = to_string(n).length();
-
-        ll ans = 1e10;
-        for(int mask = 0; mask < (1<<SZ); mask++)
-        {
-            ll num = 0;
-            int ctr = 0;
-            for(int bit = 0; bit < SZ; bit++)
-            {
-                if((mask >> bit)&1)
-                {
-                    ctr++;
-                    num = num*10+7;
-                }
-                else
-                {
-                    ctr--;
-                    num = num*10+4;
-                }
-            }
-            if(ctr == 0 && num >= n)
-                ans = min(num,ans);
-        }
-        cout << ans;
-    }
+    cin >> n;
+    fun(0);
+   cout << *v.lower_bound(n);
 }
