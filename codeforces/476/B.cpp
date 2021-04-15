@@ -14,7 +14,9 @@
 #define mms(v,i) memset(v, i, sizeof v)
 #define all(a) a.begin(), a.end()
 #define allr(a) a.rbegin(), a.rend()
-const ll MAX = 100000; const ll mod = 1000000007;
+int dx[]= {0, 1, 0, -1};
+int dy[]= {1, 0, -1, 0};
+const ll MAX = 4; const ll mod = 1000000007;
 using namespace std;
 
 void file()
@@ -28,46 +30,62 @@ void zuka()
     cin.tie(0);
     cout.tie(0);
 }
+string s1,s2;
+int ctr = 0;
+int pos = 0;
+int tot = 0;
+void solve(int index,int p)
+{
+    if(index == s2.length() && p == pos)
+    {
+        tot++;
+        ctr++;
+        return;
+    }
+    else if(index == s2.length() && p != pos)
+    {
+        tot++;
+        return;
+    }
 
+    if(s2[index] == '?')
+    {
+       solve(index+1,p+1);
+       solve(index+1,p-1);
+    }
+    else if(s2[index] == '+')
+        solve(index + 1,p + 1);
+    else
+        solve(index + 1,p - 1);
+}
 int main()
 {
     zuka();
-    string s,t;
-    cin >> s >> t;
-    int POS = 0;
-    for(int i = 0; i < s.length(); i++)
+    cin >> s1 >> s2;
+    int p2 = 0;
+    for(int i = 0; i < s1.length(); i++)
     {
-        if(s[i] == '+')
-            POS++;
+        if(s1[i] == '+')
+            pos++;
         else
-            POS--;
+            pos--;
+
+        if(s2[i] == '+')
+            p2++;
+        else if(s2[i] == '-')
+            p2--;
     }
-    int SZ = 0;
-    for(int i = 0; i < t.length(); i++)
-        if(t[i] == '?')
-            SZ++;
-    int ans = 0;
-    for(int mask = 0; mask < (1 << SZ); mask++)
-    {
-        int pos = 0;
-        int pctr = 0,mctr = 0;
-        for(int bit = 0; bit < SZ; bit++)
-        {
-            if((mask >> bit)&1)
-                pos++;
-            else
-                pos--;
-        }
-        for(int i = 0; i < t.length(); i++)
-        {
-            if(t[i] == '+')
-                pos++;
-            else if(t[i] == '-')
-                pos--;
-        }
-        if(pos == POS)
-            ans++;
-    }
+
+    int hld = 0;
+    for(int i = 0; i < s2.length(); i++)
+        if(s2[i] == '?')
+            hld++;
+    solve(0,0);
     cout << fixed << setprecision(12);
-    cout << (double)ans/(double)(1 << SZ);
+    if(hld)
+        cout << (float)ctr/(float)tot;
+    else if(pos == p2)
+        cout << (float)1;
+    else
+        cout << (float)0;
 }
