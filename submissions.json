@@ -1,4 +1,21 @@
 {
+  "CF113416417": {
+    "contest_id": 1409,
+    "language": "GNU C++14",
+    "path": "codeforces\\1409\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Decrease the Sum of Digits",
+    "problem_url": "https://codeforces.com/contest/1409/problem/D",
+    "submission_id": "CF113416417",
+    "submission_url": "https://codeforces.com/contest/1409/submission/113416417",
+    "tags": [
+      "greedy",
+      "math",
+      "*1500"
+    ],
+    "timestamp": "Apr/18/2021 15:12"
+  },
   "CF113445918": {
     "contest_id": 96,
     "language": "GNU C++14",
