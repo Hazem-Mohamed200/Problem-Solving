@@ -1,68 +1,73 @@
 #include <bits/stdc++.h>
-using namespace std;
 #define el '\n'
+#define ll long long
+#define ld long double
+#define pii pair<int,int>
+#define pll pair<ll,ll>
+#define pld pair<ld,ld>
+#define pff pair<float,float>
 #define F first
 #define S second
+#define vec(int) vector<int>
 #define pb push_back
-#define ll long long
-#define Zuka  ios::sync_with_stdio(0),cin.tie(0),cout.tie(0);
-#define file freopen("input.txt", "r", stdin),freopen("output.txt", "w", stdout);
+#define pf push_front
+#define mms(v,i) memset(v, i, sizeof v)
+#define all(a) a.begin(), a.end()
+#define allr(a) a.rbegin(), a.rend()
+const ll MAX = 100000; const ll mod = 1000000007;
+using namespace std;
 
-const ll INF = LONG_LONG_MAX;
-const ll N = 15; const ll mod = 1e9+7;
-
-int tot;
-string s1, s2;
-int dp[15][30];
-int target = 0;
-int pos = 0;
-int cnt = 0;
-ll fact(int n)
+void file()
 {
-    if(n <= 1)
-        return 1;
-    else
-        return n * fact(n-1);
+    freopen("input.txt","r" , stdin);
+    freopen("output.txt" , "w" , stdout);
 }
-void solve()
+void zuka()
 {
-
-    for(int i = 1; i <= 10; i++)
-    {
-        for(int p = 0; p <= i; p++)
-        {
-            int m = i-p;
-            dp[i][10 + (p-m)] = (fact(p+m)/(fact(p) * fact(m)));
-        }
-    }
-
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 }
+
 int main()
 {
-    Zuka
-    cin >> s1 >> s2;
-    for(int i = 0; i < s1.length(); i++)
+    zuka();
+    string s,t;
+    cin >> s >> t;
+    int POS = 0;
+    for(int i = 0; i < s.length(); i++)
     {
-        if(s1[i] == '+')
-            target++;
+        if(s[i] == '+')
+            POS++;
         else
-            target--;
-
-
-        if(s2[i] == '+')
-            pos++;
-        else if(s2[i] == '-')
-            pos--;
-        else
-            cnt++;
+            POS--;
     }
-    tot = 1 << cnt;
+    int SZ = 0;
+    for(int i = 0; i < t.length(); i++)
+        if(t[i] == '?')
+            SZ++;
+    int ans = 0;
+    for(int mask = 0; mask < (1 << SZ); mask++)
+    {
+        int pos = 0;
+        int pctr = 0,mctr = 0;
+        for(int bit = 0; bit < SZ; bit++)
+        {
+            if((mask >> bit)&1)
+                pos++;
+            else
+                pos--;
+        }
+        for(int i = 0; i < t.length(); i++)
+        {
+            if(t[i] == '+')
+                pos++;
+            else if(t[i] == '-')
+                pos--;
+        }
+        if(pos == POS)
+            ans++;
+    }
     cout << fixed << setprecision(12);
-    solve();
-    if(cnt)
-        cout << (float)dp[cnt][10 + (target-pos)]/(float)tot;
-    else if(cnt == 0 && target == pos)
-        cout << (float)1;
-    else 
-        cout << (float )0;
+    cout << (double)ans/(double)(1 << SZ);
 }
