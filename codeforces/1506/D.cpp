@@ -30,43 +30,45 @@ void zuka()
     cin.tie(0);
     cout.tie(0);
 }
-ll solve()
-{
-    int n; cin >> n;
-    int nh = n;
-    map<ll,ll>freq;
-    priority_queue<ll>q;
-    for(int i = 0; i < n; i++)
-    {
-        ll in; cin >> in;
-        freq[in]++;
-    }
-    for(auto it = freq.begin(); it != freq.end(); it++)
-    {
-        ll ff = it->S;
-        q.push(ff);
-    }
-    ll sz = n;
-    while(q.size() >= 2)
-    {
-        ll f1 = q.top();
-        q.pop();
-        ll f2 = q.top();
-        q.pop();
-        f1--;
-        f2--;
-        sz -= 2;
-        if(f1)
-            q.push(f1);
-        if(f2)
-            q.push(f2);
-    }
-    return sz;
-}
+
 int main()
 {
     zuka();
     int t; cin >> t;
     while(t--)
-        cout << solve() << el;
+    {
+        int n; cin >> n;
+        int nh = n;
+        map<ll,ll>freq;
+       priority_queue<pll>q;
+        for(int i = 0; i < n; i++)
+        {
+            ll in; cin >> in;
+            freq[in]++;
+        }
+        for(auto it = freq.begin(); it != freq.end(); it++)
+        {
+            ll ff = it->S;
+            ll num = it->F;
+            q.push({ff,num});
+        }
+        ll sz = n;
+        while(q.size() >= 2)
+        {
+            ll f1 = q.top().F;
+            ll n1 = q.top().S;
+            q.pop();
+            ll f2 = q.top().F;
+            ll n2 = q.top().S;
+            q.pop();
+            f1--;
+            f2--;
+            sz -= 2;
+            if(f1)
+                q.push({f1,n1});
+            if(f2)
+                q.push({f2,n2});
+        }
+        cout << sz << el;
+    }
 }
