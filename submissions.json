@@ -1,4 +1,21 @@
 {
+  "CF113934551": {
+    "contest_id": 1433,
+    "language": "GNU C++14",
+    "path": "codeforces\\1433\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Districts Connection",
+    "problem_url": "https://codeforces.com/contest/1433/problem/D",
+    "submission_id": "CF113934551",
+    "submission_url": "https://codeforces.com/contest/1433/submission/113934551",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "*1200"
+    ],
+    "timestamp": "Apr/23/2021 04:43"
+  },
   "CF113936064": {
     "contest_id": 1433,
     "language": "GNU C++14",
