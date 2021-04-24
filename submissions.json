@@ -1,4 +1,22 @@
 {
+  "CF114071364": {
+    "contest_id": 1497,
+    "language": "GNU C++14",
+    "path": "codeforces\\1497\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "M-arrays",
+    "problem_url": "https://codeforces.com/contest/1497/problem/B",
+    "submission_id": "CF114071364",
+    "submission_url": "https://codeforces.com/contest/1497/submission/114071364",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*1200"
+    ],
+    "timestamp": "Apr/24/2021 06:10"
+  },
   "CF114216302": {
     "contest_id": 932,
     "language": "GNU C++14",
