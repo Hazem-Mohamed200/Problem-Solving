@@ -1,4 +1,21 @@
 {
+  "CF114416740": {
+    "contest_id": 71,
+    "language": "GNU C++14",
+    "path": "codeforces\\71\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Solitaire",
+    "problem_url": "https://codeforces.com/contest/71/problem/D",
+    "submission_id": "CF114416740",
+    "submission_url": "https://codeforces.com/contest/71/submission/114416740",
+    "tags": [
+      "brute force",
+      "implementation",
+      "*2200"
+    ],
+    "timestamp": "Apr/28/2021 07:22"
+  },
   "CF114497578": {
     "contest_id": 158,
     "language": "GNU C++14",
