@@ -1,4 +1,21 @@
 {
+  "CF114810948": {
+    "contest_id": 955,
+    "language": "GNU C++14",
+    "path": "codeforces\\955\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Feed the cat",
+    "problem_url": "https://codeforces.com/contest/955/problem/A",
+    "submission_id": "CF114810948",
+    "submission_url": "https://codeforces.com/contest/955/submission/114810948",
+    "tags": [
+      "greedy",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "May/02/2021 00:59"
+  },
   "CF114810954": {
     "contest_id": 45,
     "language": "GNU C++14",
