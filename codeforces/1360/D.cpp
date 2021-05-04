@@ -36,6 +36,29 @@ void step(int& a, int& b, int q)
     a = b;
     b = step;
 }
+int eGCD(int a, int b, int& x0, int& y0)
+{
+    int x1,y1,r0,r1;
+    r0 = a, r1 = b;
+    x0 = y1 = 1;
+    x1 = y0 = 0;
+    while(r1)
+    {
+        int q = r0/r1;
+        step(x0,x1,q);
+        step(y0,y1,q);
+        step(r0,r1,q);
+    }
+    return r0;
+}
+int modInv(int c, int m)
+{
+    int x,y;
+    int g = eGCD(c,m,x,y);
+    if(g != 1)
+        return -1;
+    return x;
+}
 ll fsp(int b, int p)
 {
     if(p == 1)
