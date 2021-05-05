@@ -1,4 +1,21 @@
 {
+  "CF115358887": {
+    "contest_id": 1360,
+    "language": "GNU C++14",
+    "path": "codeforces\\1360\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Buying Shovels",
+    "problem_url": "https://codeforces.com/contest/1360/problem/D",
+    "submission_id": "CF115358887",
+    "submission_url": "https://codeforces.com/contest/1360/submission/115358887",
+    "tags": [
+      "math",
+      "number theory",
+      "*1300"
+    ],
+    "timestamp": "May/05/2021 23:51"
+  },
   "CF115403497": {
     "contest_id": 57,
     "language": "GNU C++14",
