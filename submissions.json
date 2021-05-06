@@ -1,4 +1,23 @@
 {
+  "CF115419111": {
+    "contest_id": 483,
+    "language": "GNU C++14",
+    "path": "codeforces\\483\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Counterexample ",
+    "problem_url": "https://codeforces.com/contest/483/problem/A",
+    "submission_id": "CF115419111",
+    "submission_url": "https://codeforces.com/contest/483/submission/115419111",
+    "tags": [
+      "brute force",
+      "implementation",
+      "math",
+      "number theory",
+      "*1100"
+    ],
+    "timestamp": "May/06/2021 14:40"
+  },
   "CF115420988": {
     "contest_id": 891,
     "language": "GNU C++14",
