@@ -72,6 +72,24 @@ ll fsp(ll b, ll p)
         return temp*temp;
 
 }
+//ll fact[N];
+//void pre(int n)
+//{
+//    fact[0] = 1;
+//    ll hld = 1;
+//    for(int i = 1; i <= n-2; i++)
+//    {
+//        hld *= i;
+//        fact[i] = hld;
+//    }
+//}
+//ll nCr(ll n, ll r)
+//{
+//    // fact(n) * inv(fact(n-r) * fact(r))
+//    ll hld = ((fact[n-r]%mod)*(fact[r]%mod))%mod;
+//    ll koko = modINV(hld,mod);
+//    return ((fact[n]%mod)*(koko%mod))%mod;
+//}
 
 int main()
 {
