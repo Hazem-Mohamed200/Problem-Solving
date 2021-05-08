@@ -1,4 +1,21 @@
 {
+  "CF115741988": {
+    "contest_id": 1184,
+    "language": "GNU C++14",
+    "path": "codeforces\\1184\\B1.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B1",
+    "problem_name": "The Doctor Meets Vader (Easy)",
+    "problem_url": "https://codeforces.com/contest/1184/problem/B1",
+    "submission_id": "CF115741988",
+    "submission_url": "https://codeforces.com/contest/1184/submission/115741988",
+    "tags": [
+      "binary search",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "May/09/2021 00:29"
+  },
   "CF115741994": {
     "contest_id": 199,
     "language": "GNU C++14",
