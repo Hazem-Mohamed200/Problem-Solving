@@ -1,4 +1,22 @@
 {
+  "CF115831013": {
+    "contest_id": 445,
+    "language": "GNU C++14",
+    "path": "codeforces\\445\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "DZY Loves Chemistry",
+    "problem_url": "https://codeforces.com/contest/445/problem/B",
+    "submission_id": "CF115831013",
+    "submission_url": "https://codeforces.com/contest/445/submission/115831013",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "greedy",
+      "*1400"
+    ],
+    "timestamp": "May/10/2021 06:04"
+  },
   "CF115832573": {
     "contest_id": 520,
     "language": "GNU C++14",
