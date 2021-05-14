@@ -1,4 +1,22 @@
 {
+  "CF116145913": {
+    "contest_id": 35,
+    "language": "GNU C++14",
+    "path": "codeforces\\35\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Fire Again",
+    "problem_url": "https://codeforces.com/contest/35/problem/C",
+    "submission_id": "CF116145913",
+    "submission_url": "https://codeforces.com/contest/35/submission/116145913",
+    "tags": [
+      "brute force",
+      "dfs and similar",
+      "shortest paths",
+      "*1500"
+    ],
+    "timestamp": "May/14/2021 05:11"
+  },
   "CF116146844": {
     "contest_id": 229,
     "language": "GNU C++14",
