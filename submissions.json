@@ -1,4 +1,20 @@
 {
+  "CF116293860": {
+    "contest_id": 1520,
+    "language": "GNU C++14",
+    "path": "codeforces\\1520\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Not Adjacent Matrix",
+    "problem_url": "https://codeforces.com/contest/1520/problem/C",
+    "submission_id": "CF116293860",
+    "submission_url": "https://codeforces.com/contest/1520/submission/116293860",
+    "tags": [
+      "constructive algorithms",
+      "*1000"
+    ],
+    "timestamp": "May/15/2021 22:17"
+  },
   "CF116316055": {
     "contest_id": 1520,
     "language": "GNU C++14",
