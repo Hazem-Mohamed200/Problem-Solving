@@ -1,4 +1,21 @@
 {
+  "CF117446401": {
+    "contest_id": 122,
+    "language": "GNU C++14",
+    "path": "codeforces\\122\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Lucky Sum",
+    "problem_url": "https://codeforces.com/contest/122/problem/C",
+    "submission_id": "CF117446401",
+    "submission_url": "https://codeforces.com/contest/122/submission/117446401",
+    "tags": [
+      "brute force",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "May/26/2021 23:52"
+  },
   "CF117446415": {
     "contest_id": 723,
     "language": "GNU C++14",
