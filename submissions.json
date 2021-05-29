@@ -1,4 +1,24 @@
 {
+  "CF117819384": {
+    "contest_id": 1304,
+    "language": "GNU C++14",
+    "path": "codeforces\\1304\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Air Conditioner",
+    "problem_url": "https://codeforces.com/contest/1304/problem/C",
+    "submission_id": "CF117819384",
+    "submission_url": "https://codeforces.com/contest/1304/submission/117819384",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation",
+      "sortings",
+      "two pointers",
+      "*1500"
+    ],
+    "timestamp": "May/30/2021 01:18"
+  },
   "CF117822973": {
     "contest_id": 1249,
     "language": "GNU C++14",
