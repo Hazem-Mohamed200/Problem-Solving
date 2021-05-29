@@ -41,7 +41,19 @@ void testCase()
        // 3nd kol item ha2ol h48l 3ndo el offer
        cost = prefix[i];
        if (cost <= p)
+       {
            dp[i] = i;
+       }
+       else if(i >= k)
+       {
+           cost = arr[i] + prefix[i - k];
+           if (cost <= p)
+           {
+               dp[i] = max(max(dp[i - 1], dp[i]), (ll) i);
+           }
+           else
+               dp[i] = max(dp[i - 1], dp[i]);
+       }
        else
            dp[i] = max(dp[i-1], dp[i]);
    }
