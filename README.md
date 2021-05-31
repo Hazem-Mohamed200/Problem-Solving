@@ -12,16 +12,17 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-13 | [C - Boredom](https://codeforces.com/contest/456/problem/C) | [GNU C++14](./codeforces/456/C.cpp) | `dp` `*1500` | Jun/06/2021 03:51 | 
-12 | [C - Unstable String](https://codeforces.com/contest/1535/problem/C) | [GNU C++14](./codeforces/1535/C.cpp) | `binary search` `dp` `greedy` `implementation` `strings` `two pointers` | Jun/06/2021 03:29 | 
-11 | [B - Array Reodering](https://codeforces.com/contest/1535/problem/B) | [GNU C++14](./codeforces/1535/B.cpp) | `brute force` `greedy` `math` `number theory` `sortings` | Jun/04/2021 16:43 | 
-10 | [A - Fair Playoff](https://codeforces.com/contest/1535/problem/A) | [GNU C++14](./codeforces/1535/A.cpp) | `brute force` `implementation` | Jun/04/2021 16:39 | 
-9 | [B - Ping-Pong (Easy Version)](https://codeforces.com/contest/320/problem/B) | [GNU C++14](./codeforces/320/B.cpp) | `dfs and similar` `graphs` `*1500` | Jun/04/2021 15:57 | 
-8 | [A - Guess a number!](https://codeforces.com/contest/416/problem/A) | [GNU C++14](./codeforces/416/A.cpp) | `greedy` `implementation` `two pointers` `*1400` | Jun/04/2021 15:00 | 
-7 | [A -  Déjà Vu](https://codeforces.com/contest/1504/problem/A) | [GNU C++14](./codeforces/1504/A.cpp) | `constructive algorithms` `strings` `*800` | Jun/02/2021 22:52 | 
-6 | [C - Compression and Expansion](https://codeforces.com/contest/1523/problem/C) | [GNU C++14](./codeforces/1523/C.cpp) | `brute force` `data structures` `greedy` `implementation` `trees` `*1600` | Jun/02/2021 22:25 | 
-5 | [B - Lord of the Values](https://codeforces.com/contest/1523/problem/B) | [GNU C++14](./codeforces/1523/B.cpp) | `constructive algorithms` `*1100` | Jun/02/2021 21:25 | 
-4 | [A - Equalize Prices Again](https://codeforces.com/contest/1234/problem/A) | [GNU C++14](./codeforces/1234/A.cpp) | `math` `*800` | Jun/01/2021 01:07 | 
-3 | [D - Distinct Characters Queries](https://codeforces.com/contest/1234/problem/D) | [GNU C++14](./codeforces/1234/D.cpp) | `data structures` `*1600` | Jun/01/2021 00:40 | 
-2 | [C - Pipes](https://codeforces.com/contest/1234/problem/C) | [GNU C++14](./codeforces/1234/C.cpp) | `dp` `implementation` `*1500` | Jun/01/2021 00:35 | 
-1 | [F - Consecutive Subsequence](https://codeforces.com/contest/977/problem/F) | [GNU C++14](./codeforces/977/F.cpp) | `dp` `*1700` | May/31/2021 16:43 | 
+14 | [C - Boredom](https://codeforces.com/contest/456/problem/C) | [GNU C++14](./codeforces/456/C.cpp) | `dp` `*1500` | Jun/06/2021 03:51 | 
+13 | [C - Unstable String](https://codeforces.com/contest/1535/problem/C) | [GNU C++14](./codeforces/1535/C.cpp) | `binary search` `dp` `greedy` `implementation` `strings` `two pointers` | Jun/06/2021 03:29 | 
+12 | [B - Array Reodering](https://codeforces.com/contest/1535/problem/B) | [GNU C++14](./codeforces/1535/B.cpp) | `brute force` `greedy` `math` `number theory` `sortings` | Jun/04/2021 16:43 | 
+11 | [A - Fair Playoff](https://codeforces.com/contest/1535/problem/A) | [GNU C++14](./codeforces/1535/A.cpp) | `brute force` `implementation` | Jun/04/2021 16:39 | 
+10 | [B - Ping-Pong (Easy Version)](https://codeforces.com/contest/320/problem/B) | [GNU C++14](./codeforces/320/B.cpp) | `dfs and similar` `graphs` `*1500` | Jun/04/2021 15:57 | 
+9 | [A - Guess a number!](https://codeforces.com/contest/416/problem/A) | [GNU C++14](./codeforces/416/A.cpp) | `greedy` `implementation` `two pointers` `*1400` | Jun/04/2021 15:00 | 
+8 | [A -  Déjà Vu](https://codeforces.com/contest/1504/problem/A) | [GNU C++14](./codeforces/1504/A.cpp) | `constructive algorithms` `strings` `*800` | Jun/02/2021 22:52 | 
+7 | [C - Compression and Expansion](https://codeforces.com/contest/1523/problem/C) | [GNU C++14](./codeforces/1523/C.cpp) | `brute force` `data structures` `greedy` `implementation` `trees` `*1600` | Jun/02/2021 22:25 | 
+6 | [B - Lord of the Values](https://codeforces.com/contest/1523/problem/B) | [GNU C++14](./codeforces/1523/B.cpp) | `constructive algorithms` `*1100` | Jun/02/2021 21:25 | 
+5 | [A - Equalize Prices Again](https://codeforces.com/contest/1234/problem/A) | [GNU C++14](./codeforces/1234/A.cpp) | `math` `*800` | Jun/01/2021 01:07 | 
+4 | [D - Distinct Characters Queries](https://codeforces.com/contest/1234/problem/D) | [GNU C++14](./codeforces/1234/D.cpp) | `data structures` `*1600` | Jun/01/2021 00:40 | 
+3 | [C - Pipes](https://codeforces.com/contest/1234/problem/C) | [GNU C++14](./codeforces/1234/C.cpp) | `dp` `implementation` `*1500` | Jun/01/2021 00:35 | 
+2 | [F - Consecutive Subsequence](https://codeforces.com/contest/977/problem/F) | [GNU C++14](./codeforces/977/F.cpp) | `dp` `*1700` | May/31/2021 16:43 | 
+1 | [A - Game of Life](https://codeforces.com/contest/1523/problem/A) | [GNU C++14](./codeforces/1523/A.cpp) | `implementation` `*800` | May/31/2021 15:47 | 
