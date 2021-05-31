@@ -1,4 +1,21 @@
 {
+  "CF118024594": {
+    "contest_id": 1234,
+    "language": "GNU C++14",
+    "path": "codeforces\\1234\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Pipes",
+    "problem_url": "https://codeforces.com/contest/1234/problem/C",
+    "submission_id": "CF118024594",
+    "submission_url": "https://codeforces.com/contest/1234/submission/118024594",
+    "tags": [
+      "dp",
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Jun/01/2021 00:35"
+  },
   "CF118024665": {
     "contest_id": 1234,
     "language": "GNU C++14",
